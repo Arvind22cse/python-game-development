@@ -78,12 +78,12 @@ while True:
     if ball.ycor() > 290:
         ball.sety(290)
         ball.dy *= -1  
-        winsound.PlaySound("bounc.wav",winsound.SND_ASYNC)
+        # winsound.PlaySound("bounc.wav",winsound.SND_ASYNC)
 
     if ball.ycor() < -290:
         ball.sety(-290)
         ball.dy *= -1
-        winsound.PlaySound("bounc.wav",winsound.SND_ASYNC)
+        # winsound.PlaySound("bounc.wav",winsound.SND_ASYNC)
 
     if ball.xcor() > 390:
         ball.goto(0, 0) 
@@ -91,7 +91,7 @@ while True:
         scorea+=1
         pen.clear()
         pen.write("Player A: {} Player B: {}".format(scorea,scoreb),align="center" , font=("Courier",24,"normal"))
-        winsound.PlaySound("bounc.wav",winsound.SND_ASYNC)
+        # winsound.PlaySound("bounc.wav",winsound.SND_ASYNC)
 
 
     if ball.xcor() < -390:
@@ -100,16 +100,16 @@ while True:
         scoreb+=1
         pen.clear()
         pen.write("Player A: {} Player B: {}".format(scorea,scoreb),align="center" , font=("Courier",24,"normal"))
-        winsound.PlaySound("bounc.wav",winsound.SND_ASYNC)
+        # winsound.PlaySound("bounc.wav",winsound.SND_ASYNC)
 
     if (ball.xcor()>340 and ball.xcor() < 350) and (ball.ycor()<bat1.ycor()+40 and ball.ycor()>bat1.ycor()-40):
         ball.setx(340)
         ball.dx *= -1  
-        winsound.PlaySound("bounc.wav",winsound.SND_ASYNC)
+        # winsound.PlaySound("bounc.wav",winsound.SND_ASYNC)
 
     if (ball.xcor()<-340 and ball.xcor() >-350) and (ball.ycor() < bat.ycor() + 40 and ball.ycor()>bat.ycor()-40):
         ball.setx(-340)
         ball.dx *= -1
-        winsound.PlaySound("bounc.wav",winsound.SND_ASYNC)
+        # winsound.PlaySound("bounc.wav",winsound.SND_ASYNC)
 
 
